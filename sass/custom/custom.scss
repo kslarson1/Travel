@@ -1,0 +1,26 @@
+.center {
+	text-align: center;
+}
+
+/*HOME*/
+.fixed_bg_home {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #fff;
+	min-height: 700px;
+}
+
+/*FLAT SECTION*/
+.flat_bg {
+	background-color: $color_bg_1;
+	position: relative;
+	min-height: 300px;
+	padding: 3em 0;
+}
+
+/*BLOG AREA*/
+.blog_area {
+	background-color: blue;
+	min-height: 500px;
+}
