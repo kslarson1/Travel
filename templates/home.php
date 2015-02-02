@@ -17,15 +17,14 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
-
 <!-- START OF HOME SECTION -->
 <div id="home">
 	<div class="fixed_bg_home" style="background-image: url(<?php the_field('home_bg_image'); ?>);">
 	<div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12 center">
-			<h1>sample text</h1>
+			<h1>Find paradise.</h1>
+      <a href="#" class="button_ghost">Call Now</a>
 		</div>
 	</div>
 	</div>
@@ -35,21 +34,47 @@ get_header(); ?>
 <!-- END OF HOME SECTION -->
 <!-- START OF SCROLLING BREAK SECTION -->
 <div class="flat_bg">
-  <div class="container-fluid">
+  <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 center">
-      <h2><?php the_field('home_subheader_1'); ?></h2>
-      <hr>
-      <p><?php the_field('home_subtext_1'); ?></p>
-      <a href="#" class="button_flat">1-800</a>
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div class="center">
+        <h2><?php the_field('home_subheader_1'); ?></h2>
+      </div>
     </div>
   </div>
+  <hr>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <p><?php the_field('home_subtext_1'); ?></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <p><?php the_field('home_subtext_2'); ?></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <p><?php the_field('home_subtext_3'); ?></p> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 center">
+        <a href="#" class="button_flat">1-800</a>
+      </div>
+    </div>
   </div>
 </div>
 <!-- END OF SCROLLING BREAK SECTION -->
 
 <div class="blog_area">
-<div class="container">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 center">
+      <h2><?php the_field('blog_header'); ?></h2>
+      <p><?php the_field('blog_subheader'); ?></p>
+    </div>
+  </div>
   <div class="row">
 <!-- START OF CUSTOM POST FOR BLOG -->
 <!-- // The Arguments -->
@@ -62,12 +87,20 @@ get_header(); ?>
 $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
+
   <!-- LOOP CONTENT BEGINS-->
-  <div class="col-xs-12 col-sm-4">
-    <?php the_title();
-    echo '<div class="entry-content">';
-    the_content();
-    echo '</div>'; ?>
+  <div class="custom_column_third">
+  <a href="<?php echo get_permalink(); ?>">
+  <div class="travel_blog_post" style="background-image: url(<?php the_field('small_display_image'); ?>);">
+    <div class="black_background_top">
+      <h4><?php the_title(); ?></h4>
+      <p><?php travel_posted_on(); ?></p>
+    </div>
+    <div class="black_background bottom">
+      <p><?php the_field('small_display_teaser'); ?></p>
+    </div>
+  </div>
+  </a>
   </div>
 
 <?php endwhile; ?>

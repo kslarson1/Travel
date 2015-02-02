@@ -3,24 +3,221 @@
 }
 
 /*HOME*/
+#home {
+  h1{
+  padding: 4em 0 0 0;
+  }
+}
+
+.inline {
+  display: inline-block;
+  i,
+  p {
+    display: inline-block;
+  }
+}
+
 .fixed_bg_home {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #fff;
-	min-height: 700px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  min-height: 700px;
 }
 
 /*FLAT SECTION*/
 .flat_bg {
-	background-color: $color_bg_1;
-	position: relative;
-	min-height: 300px;
-	padding: 3em 0;
+  display: block;
+  background-color: $color_bg_1;
+  position: relative;
+  min-height: 300px;
+  padding: 3em 0 4em 0;
+  p {
+    color: $color_logo_2;
+    font-weight: 400;
+    }
+  hr {
+  	background-color: $color_logo_1;
+  	width: 70%;
+    max-width: 500px;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0 1.5em 0 1em;
+    list-style-type: none;
+      li {
+        width: 100%;
+        font-size: 1em;
+        padding: .3em 0;
+       }
+    }
 }
 
 /*BLOG AREA*/
 .blog_area {
-	background-color: blue;
-	min-height: 500px;
+  background-color: $color_bg_2;
+  padding: 0;
+  p {
+  	color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 .5em;
+    font-weight: 100;
+  }
+  a {
+  text-decoration: none;
+  color: $color_text_1;
+  font-family: $font_text;
+  font-weight: 300;
+  }
+  h4 {
+  	color: #fff;
+  }
+  h4:hover {
+  	color: $color_logo_1;
+  	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;  
+  }
+  p:hover {
+  	color: $color_logo_2;
+  	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;  
+  }
+  .container-fluid,
+  .row,
+   {
+    margin: 0;
+    padding: 0;
+  }
+  .custom_column_third {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 33.33333%;
+    cursor: pointer;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
 }
+
+.black_background_top {
+  width: 100%;
+  background-color: rgba(0,0,0,.6);
+  height: 80px;
+  padding: 5px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  h4 {
+    text-align: center;
+  }
+  a {
+    color: $color_bg_4;
+    font-weight: 100;
+  }
+}
+
+.black_background_top:hover,
+.black_background_top:active {
+  background-color: rgba(0,0,0,.8);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;   
+}
+
+.black_background {
+  width: 100%;
+  background-color: rgba(0,0,0,.6);
+  height: 50px;
+  padding: 5px;
+  p {
+    color: #fff;
+  }
+}
+
+.black_background:hover,
+.black_background:active {
+  background-color: rgba(0,0,0,.8);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;   
+  p {
+    color: $color_logo_1;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;  
+  }
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0px;
+}
+
+.travel_blog_post {
+  width: 100%;
+  height: 380px;
+}
+
+/*CUSTOM POST TRAVEL_POST*/
+.travel_post {
+  width: 100%;
+  min-height: 300px;
+  background-color: $color_bg_1;
+  padding: 4em 0;
+    hr {
+    	background-color: $color_bg_3;
+    	height: 1px;
+    	width: 70%;
+    }
+}
+
+
+/*FOOTER*/
+.site-footer {
+  width: 100%;
+  height: 50px;
+  padding: 10px 0;
+  .fa {
+    padding: 0 .5em;
+    color: $color_text_2;
+  }
+  .fa:hover,
+  .fa:active {
+    color: $color_logo_1;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;  
+  }
+}
+
+
+/*ARCHIVE*/
+#categories {
+  min-height: 500px;
+  width: 100%;
+  padding: 4em 0;
+  }
+

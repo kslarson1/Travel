@@ -17,12 +17,16 @@ get_header(); ?>
   <div class="container">	
     <div class="row">
       <div class="col-xs-12 center">
-        <h1><?php the_title(); ?><h1>
+        <h1><?php the_title(); ?></h1>
       </div>
+      <hr>
     </div>
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12 col-md-8">
         <?php get_template_part( 'content', 'single_travel_posts' ); ?>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <?php get_sidebar($travel_posts); ?>
       </div>
     </div>
   </div>

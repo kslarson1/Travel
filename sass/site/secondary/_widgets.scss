@@ -11,3 +11,24 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+ /*SIDEBAR*/
+.widget-area {
+  padding: .5em;
+  border: 1px solid $color_bg_4;
+  h1 {
+    font-size: 2.25em;
+  }
+  a {
+  	color: $color_text_2;
+  }
+  a:hover,
+  a:active {
+  	color: $color_logo_1;
+  	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;  
+  }
+}
