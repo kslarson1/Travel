@@ -12,7 +12,7 @@
 /*HOME*/
 #home {
   h1{
-  padding: 4em 0 0 0;
+  padding: 2em 0 0 0;
   }
 }
 
@@ -39,9 +39,13 @@
   position: relative;
   min-height: 300px;
   padding: 3em 0 4em 0;
+  h2 {
+    color: $color_logo_2;
+    font-weight: 300;
+  }
   p {
     color: $color_logo_2;
-    font-weight: 400;
+    font-weight: 300;
     }
   hr {
   	background-color: $color_logo_1;
@@ -65,7 +69,7 @@
 /*BLOG AREA*/
 .blog_area {
   background-color: $color_bg_2;
-  padding: 0;
+  padding: 2em 0 0 0;
   p {
   	color: #fff;
     white-space: nowrap;
@@ -112,7 +116,6 @@
     padding: 0;
     margin: 0;
     width: 33.33333%;
-    cursor: pointer;
     @media screen and (max-width: 600px) {
       width: 100%;
       margin-bottom: 1em;
@@ -121,6 +124,7 @@
 }
 
 .black_background_top {
+  cursor: pointer;
   width: 100%;
   background-color: rgba(0,0,0,.6);
   height: 80px;
@@ -149,6 +153,7 @@
 }
 
 .black_background {
+  cursor: pointer;
   width: 100%;
   background-color: rgba(0,0,0,.6);
   height: 50px;
@@ -259,7 +264,6 @@
   }
 
 #archive {
-  width: 100%;
   padding: 4em 0;
   hr {
     background-color: $color_logo_1;
@@ -268,7 +272,7 @@
 
 .thick {
   background-color: $color_logo_1;
-  height: 2px;
+  height: 3px;
   margin-bottom: 3em;
   }
 

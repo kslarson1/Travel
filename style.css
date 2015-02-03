@@ -91,7 +91,7 @@ h6 {
 /* Medium Gray*/
 /* White-transparent */
 /* Black */
-/* Copper Solid */
+/* Light Gray */
 /* White */
 /*BUTTONS*/
 .button_flat {
@@ -438,7 +438,7 @@ h6 {
 /* Medium Gray*/
 /* White-transparent */
 /* Black */
-/* Copper Solid */
+/* Light Gray */
 /* White */
 /*BUTTONS*/
 .button_flat {
@@ -504,7 +504,7 @@ h6 {
 
 /*HOME*/
 #home h1 {
-  padding: 4em 0 0 0; }
+  padding: 2em 0 0 0; }
 
 .inline {
   display: inline-block; }
@@ -526,9 +526,12 @@ h6 {
   position: relative;
   min-height: 300px;
   padding: 3em 0 4em 0; }
+  .flat_bg h2 {
+    color: #00355f;
+    font-weight: 300; }
   .flat_bg p {
     color: #00355f;
-    font-weight: 400; }
+    font-weight: 300; }
   .flat_bg hr {
     background-color: #FFA500;
     width: 70%;
@@ -547,7 +550,7 @@ h6 {
 /*BLOG AREA*/
 .blog_area {
   background-color: #7EC0EE;
-  padding: 0; }
+  padding: 2em 0 0 0; }
   .blog_area p {
     color: #fff;
     white-space: nowrap;
@@ -586,14 +589,14 @@ h6 {
     float: left;
     padding: 0;
     margin: 0;
-    width: 33.33333%;
-    cursor: pointer; }
+    width: 33.33333%; }
     @media screen and (max-width: 600px) {
       .blog_area .custom_column_third {
         width: 100%;
         margin-bottom: 1em; } }
 
 .black_background_top {
+  cursor: pointer;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   height: 80px;
@@ -617,6 +620,7 @@ h6 {
   transition: all .5s; }
 
 .black_background {
+  cursor: pointer;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   height: 50px;
@@ -710,14 +714,13 @@ h6 {
   padding: 4em 0; }
 
 #archive {
-  width: 100%;
   padding: 4em 0; }
   #archive hr {
     background-color: #FFA500; }
 
 .thick {
   background-color: #FFA500;
-  height: 2px;
+  height: 3px;
   margin-bottom: 3em; }
 
 /*--------------------------------------------------------------
@@ -2328,17 +2331,23 @@ textarea {
   margin-left: 1.5em;
   padding: 10px 0 0 0;
   float: left; }
+  @media screen and (max-width: 600px) {
+    .logo_image {
+      margin-left: 5px; } }
 
 .main_header {
   position: fixed;
   top: 0;
-  padding-right: 160px;
+  padding-right: 0px;
   z-index: 99;
   width: 100%;
   height: 60px;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); }
+  @media screen and (max-width: 600px) {
+    .main_header {
+      padding-right: 5px; } }
 
 .nav {
   height: 60px;
@@ -2359,6 +2368,9 @@ textarea {
       list-style: none;
       margin: 0;
       padding: 0 10px; }
+      @media screen and (max-width: 600px) {
+        .nav ul li {
+          padding: 0 2px; } }
     .nav ul a {
       color: #333; }
     .nav ul a:hover,
@@ -2370,17 +2382,6 @@ textarea {
       -o-transition: all .5s;
       transition: all .5s; }
 
-/* Small menu. */
-.menu-toggle {
-  display: none; }
-
-@media screen and (max-width: 600px) {
-  .menu-toggle,
-  .main-navigation.toggled .nav-menu {
-    display: block; }
-
-  .main-navigation ul {
-    display: none; } }
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/

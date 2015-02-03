@@ -23,9 +23,14 @@ get_header(); ?>
 	<div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12 center">
-			<h1>Find paradise.</h1>
+			<h1><?php the_field('home_header'); ?></h1>
       <a href="tel:800-622-1444" class="button_ghost">Call Now</a>
-		</div>
+		  <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <p><?php the_field('home_text'); ?></p>
+      </div>
+      </div>
+    </div>
 	</div>
 	</div>
 	</div>

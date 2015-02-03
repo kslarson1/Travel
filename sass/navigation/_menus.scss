@@ -4,18 +4,24 @@
   margin-left: 1.5em;
   padding: 10px 0 0 0;
   float: left;
+   @media screen and (max-width: 600px) {
+    margin-left: 5px;
+  }
 }
 
 .main_header {
   position: fixed;
   top: 0;
-  padding-right: 160px;
+  padding-right: 0px;
   z-index: 99;
   width:100%; 
   height: 60px; 
   background-color: rgba(255,255,255,0.8);
   text-align: center;
   box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+  @media screen and (max-width: 600px) {
+    padding-right: 5px;
+  }
 }
 
 .nav {
@@ -36,7 +42,10 @@
       display: inline-block;
       list-style: none;
       margin: 0;
-	  padding: 0 10px;
+	    padding: 0 10px;
+      @media screen and (max-width: 600px) {
+        padding: 0 2px;
+        }
       }
     a {
       color: $color_text_2;
@@ -51,20 +60,4 @@
     	transition: all .5s;  
     	}
     }
-}
-
-/* Small menu. */
-.menu-toggle {
-	display: none;
-}
-
-@media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
-
-	.main-navigation ul {
-		display: none;
-	}
 }

@@ -28,13 +28,14 @@
 
   <nav class="nav" role="navigation">
   
-    <img class="logo_image" src="<?php the_field('logo'); ?>">
+    <img class="logo_image" src="/travel/images/logo_small.png">
 
     <ul>
       <li><a href="/travel">Home</a></li>
       <li><a href="/travel/archive">Blog</a></li>
       <li><b><a href="tel:+800-622-1444">Call Now</a></b></li>
     </ul>
+
   </nav>
 
 </header>
