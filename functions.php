@@ -158,10 +158,21 @@ function create_post_type() {
                 'name' => __( 'Travel Blog Posts' ),
                 'singular_name' => __( 'Travel Blog Post' )
             ),
-            'taxonomies' => array('category'),
+            'taxonomies' => array( 'category' ),
             'public' => true,
             'has_archive' => true,
-            'rewrite' => array('slug'=>'travel'),
         )
     );
+
+function add_custom_types_to_tax( $query ) {
+if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+
+// Get all your post types
+$post_types = get_post_types();
+
+$query->set( 'post_type', $post_types );
+return $query;
+}
+}
+add_filter( 'pre_get_posts', 'add_custom_types_to_tax' );
 }

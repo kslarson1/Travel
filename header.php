@@ -27,10 +27,13 @@
   <header class="main_header" role="banner">
 
   <nav class="nav" role="navigation">
+  
+    <img class="logo_image" src="<?php the_field('logo'); ?>">
+
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><b><a href="tel:+1800229933">Call Now</a></b></li>
+      <li><a href="/travel">Home</a></li>
+      <li><a href="/travel/archive">Blog</a></li>
+      <li><b><a href="tel:+800-622-1444">Call Now</a></b></li>
     </ul>
   </nav>
 

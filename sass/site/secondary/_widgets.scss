@@ -17,7 +17,10 @@
   padding: .5em;
   border: 1px solid $color_bg_4;
   h1 {
-    font-size: 2.25em;
+    font-size: 2em;
+    text-align: center;
+    margin: .2em;
+    padding: 0;
   }
   a {
   	color: $color_text_2;
@@ -30,5 +33,9 @@
     -ms-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;  
+  }
+  ul {
+    margin: 0;
+    padding: .5em;
   }
 }

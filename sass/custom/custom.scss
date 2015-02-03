@@ -2,6 +2,13 @@
 	text-align: center;
 }
 
+.post_header {
+  width: 100%;
+  padding: .5em .5em 0 .5em;
+  background-repeat: auto;
+  background-color: #fff;
+ }
+
 /*HOME*/
 #home {
   h1{
@@ -185,19 +192,49 @@
   min-height: 300px;
   background-color: $color_bg_1;
   padding: 4em 0;
-    hr {
-    	background-color: $color_bg_3;
+      hr {
+    	background-color: $color_logo_1;
     	height: 1px;
-    	width: 70%;
+    	width: 90%;
     }
 }
 
+.travel_posts {
+  padding-bottom: 3em;
+  border-bottom: 2px solid $color_logo_1;
+}
+
+.single_nav {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid $color_bg_4;
+  border-bottom: 1px solid $color_bg_4;
+  margin: 0;
+  padding: 0 1em;
+  p {
+    display: inline;
+  }
+  a {
+    color: $color_bg_3;
+  }
+  a:hover,
+  a:active {
+  color: $color_logo_1;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;  
+  }
+}
 
 /*FOOTER*/
 .site-footer {
   width: 100%;
   height: 50px;
   padding: 10px 0;
+  background-color: $color_bg_4;
   .fa {
     padding: 0 .5em;
     color: $color_text_2;
@@ -220,4 +257,19 @@
   width: 100%;
   padding: 4em 0;
   }
+
+#archive {
+  width: 100%;
+  padding: 4em 0;
+  hr {
+    background-color: $color_logo_1;
+  }
+}
+
+.thick {
+  background-color: $color_logo_1;
+  height: 2px;
+  margin-bottom: 3em;
+  }
+
 

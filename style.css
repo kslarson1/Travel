@@ -496,6 +496,12 @@ h6 {
 .center {
   text-align: center; }
 
+.post_header {
+  width: 100%;
+  padding: .5em .5em 0 .5em;
+  background-repeat: auto;
+  background-color: #fff; }
+
 /*HOME*/
 #home h1 {
   padding: 4em 0 0 0; }
@@ -650,15 +656,41 @@ h6 {
   background-color: #fff;
   padding: 4em 0; }
   .travel_post hr {
-    background-color: #333;
+    background-color: #FFA500;
     height: 1px;
-    width: 70%; }
+    width: 90%; }
+
+.travel_posts {
+  padding-bottom: 3em;
+  border-bottom: 2px solid #FFA500; }
+
+.single_nav {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 0 1em; }
+  .single_nav p {
+    display: inline; }
+  .single_nav a {
+    color: #333; }
+  .single_nav a:hover,
+  .single_nav a:active {
+    color: #FFA500;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
 
 /*FOOTER*/
 .site-footer {
   width: 100%;
   height: 50px;
-  padding: 10px 0; }
+  padding: 10px 0;
+  background-color: #ccc; }
   .site-footer .fa {
     padding: 0 .5em;
     color: #333; }
@@ -676,6 +708,17 @@ h6 {
   min-height: 500px;
   width: 100%;
   padding: 4em 0; }
+
+#archive {
+  width: 100%;
+  padding: 4em 0; }
+  #archive hr {
+    background-color: #FFA500; }
+
+.thick {
+  background-color: #FFA500;
+  height: 2px;
+  margin-bottom: 3em; }
 
 /*--------------------------------------------------------------
 2.7 Bootstrap
@@ -2177,7 +2220,7 @@ ul, ol {
   margin: 0 0 1.5em 3em; }
 
 ul {
-  list-style: disc; }
+  list-style: none; }
 
 ol {
   list-style: decimal; }
@@ -2279,14 +2322,21 @@ textarea {
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
+.logo_image {
+  display: inline;
+  height: 50px;
+  margin-left: 1.5em;
+  padding: 10px 0 0 0;
+  float: left; }
+
 .main_header {
   position: fixed;
   top: 0;
+  padding-right: 160px;
   z-index: 99;
   width: 100%;
   height: 60px;
   background-color: rgba(255, 255, 255, 0.8);
-  z-index: 999;
   text-align: center;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); }
 
@@ -2423,7 +2473,10 @@ textarea {
   padding: .5em;
   border: 1px solid #ccc; }
   .widget-area h1 {
-    font-size: 2.25em; }
+    font-size: 2em;
+    text-align: center;
+    margin: .2em;
+    padding: 0; }
   .widget-area a {
     color: #333; }
   .widget-area a:hover,
@@ -2434,6 +2487,9 @@ textarea {
     -ms-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s; }
+  .widget-area ul {
+    margin: 0;
+    padding: .5em; }
 
 /*--------------------------------------------------------------
 10.0 Content

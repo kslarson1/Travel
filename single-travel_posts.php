@@ -16,18 +16,23 @@ get_header(); ?>
 <div class="travel_post">			
   <div class="container">	
     <div class="row">
-      <div class="col-xs-12 center">
+      <div class="col-xs-12 col-md-8">
+      <div class="center">
         <h1><?php the_title(); ?></h1>
       </div>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-md-8">
+       <hr>
         <?php get_template_part( 'content', 'single_travel_posts' ); ?>
       </div>
       <div class="col-xs-12 col-md-4">
         <?php get_sidebar($travel_posts); ?>
       </div>
+    </div>
+    <div class="row">
+    <div class="col-xs-12 col-md-8">
+    <div class="single_nav">
+      <p style="float: left"><?php previous_post_link(); ?></p><p style="float: right"><?php next_post_link(); ?></p>
+    </div>
+    </div>
     </div>
   </div>
 </div>

@@ -24,7 +24,7 @@ get_header(); ?>
 	<div class="row">
 		<div class="col-xs-12 center">
 			<h1>Find paradise.</h1>
-      <a href="#" class="button_ghost">Call Now</a>
+      <a href="tel:800-622-1444" class="button_ghost">Call Now</a>
 		</div>
 	</div>
 	</div>
@@ -60,7 +60,7 @@ get_header(); ?>
     </div>
     <div class="row">
       <div class="col-xs-12 center">
-        <a href="#" class="button_flat">1-800</a>
+        <a href="tel:800-622-1444" class="button_flat">Call Now</a>
       </div>
     </div>
   </div>

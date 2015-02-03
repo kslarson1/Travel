@@ -9,6 +9,10 @@
 
 get_header(); ?>
 
+<div id="categories">
+<div class="container">
+<div class="row">
+	<div class="col-xs-12 col-md-8">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -31,7 +35,7 @@ get_header(); ?>
 					 */
 					get_template_part( 'content', get_post_format() );
 				?>
-
+			
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
@@ -44,6 +48,11 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+</div>
+	<div class="col-xs-12 col-md-4">
+		<?php get_sidebar(); ?>
+	</div>
+</div>
+</div> <!-- END OF Container -->
+</div> <!-- END OF CATEGORIES -->
 <?php get_footer(); ?>
