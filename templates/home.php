@@ -24,7 +24,7 @@ get_header(); ?>
 	<div class="row">
 		<div class="col-xs-12 center">
 			<h1><?php the_field('home_header'); ?></h1>
-      <a href="tel:800-622-1444" class="button_ghost">Call Now</a>
+      <a href="tel:800-622-1444" class="button_flat">Call Now</a>
 		  <div class="row">
       <div class="col-xs-12 col-sm-6 col-sm-offset-3">
         <p><?php the_field('home_text'); ?></p>
@@ -49,17 +49,17 @@ get_header(); ?>
   </div>
   <hr>
     <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
         <p><?php the_field('home_subtext_1'); ?></p>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
         <p><?php the_field('home_subtext_2'); ?></p>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
         <p><?php the_field('home_subtext_3'); ?></p> 
       </div>
     </div>

@@ -19,7 +19,7 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<p class="page-title"><b>', '</b></p>' );
+					the_archive_title( '<p class="page-title "><b>', '</b></p>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -55,7 +55,7 @@ get_header(); ?>
 </div>
 <div class="row">
 <div class="col-xs-12 col-md-8">
-<div class="single_nav"><p><?php previous_posts_link(); ?>hello</p></div>
+<div class="single_nav"><p><?php previous_posts_link(); ?>hello NEED TO UPdate category.php</p></div>
 </div>
 </div>
 </div> <!-- END OF Container -->

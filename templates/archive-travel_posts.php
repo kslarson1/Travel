@@ -25,12 +25,14 @@ get_header(); ?>
 		$args = array( 'post_type' => 'travel_posts', 'posts_per_page' => 8 );
 $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post(); ?>
-  	<h2><?php the_title(); ?></h2>
+  	<h2 class="post_header"><?php the_title(); ?></h2>
   	<p><?php the_date(); ?></p>
-  	<hr>
   <?php echo '<div class="entry-content">';
   the_content(); ?>
-	<hr class="thick">
+	<br>
+	<br>
+	<br>
+	<br>
   <?php echo '</div>';
 endwhile; ?>
 

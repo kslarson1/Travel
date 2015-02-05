@@ -3,16 +3,33 @@
 }
 
 .post_header {
+  margin: 0 0 1.5em 0;
+  padding: 0;
   width: 100%;
-  padding: .5em .5em 0 .5em;
-  background-repeat: auto;
-  background-color: #fff;
+  font-weight: 200;
+  text-align: center;
+  color: $color_logo_2;
+  box-shadow: 0px 0px 14px rgba(140,140,140,.8);
+  border: 2px solid $color_logo_1;
+  h1 {
+    margin: .2em;
+  }
+  a {
+    font-weight: 200;
+    color: $color_logo_2;
+  }
  }
+
 
 /*HOME*/
 #home {
-  h1{
-  padding: 2em 0 0 0;
+  h1 {
+    padding: 2em 0 0 0;
+    font-weight: 300;
+  }
+  p {
+    padding: 1.2em 0 0 0;
+    font-weight: 400;
   }
 }
 
@@ -45,7 +62,7 @@
   }
   p {
     color: $color_logo_2;
-    font-weight: 300;
+    font-weight: 400;
     }
   hr {
   	background-color: $color_logo_1;
@@ -68,15 +85,17 @@
 
 /*BLOG AREA*/
 .blog_area {
-  background-color: $color_bg_2;
+  background-color: $color_button_3;
   padding: 2em 0 0 0;
+  h2 {
+    font-weight: 300;
+  }
   p {
-  	color: #fff;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 0 .5em;
-    font-weight: 100;
+    font-weight: 300;
   }
   a {
   text-decoration: none;
@@ -89,14 +108,6 @@
   }
   h4:hover {
   	color: $color_logo_1;
-  	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-ms-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;  
-  }
-  p:hover {
-  	color: $color_logo_2;
   	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-ms-transition: all .5s;
@@ -116,7 +127,7 @@
     padding: 0;
     margin: 0;
     width: 33.33333%;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 640px) {
       width: 100%;
       margin-bottom: 1em;
     }
@@ -132,6 +143,7 @@
   p {
     margin: 0;
     padding: 0;
+    text-align: center;
   }
   h4 {
     text-align: center;
@@ -159,6 +171,8 @@
   height: 50px;
   padding: 5px;
   p {
+    text-align: center;
+    padding: 0 3em;
     color: #fff;
   }
 }
@@ -206,7 +220,6 @@
 
 .travel_posts {
   padding-bottom: 3em;
-  border-bottom: 2px solid $color_logo_1;
 }
 
 .single_nav {
@@ -269,11 +282,5 @@
     background-color: $color_logo_1;
   }
 }
-
-.thick {
-  background-color: $color_logo_1;
-  height: 3px;
-  margin-bottom: 3em;
-  }
 
 
