@@ -38,7 +38,7 @@
 
   <nav class="nav" role="navigation">
   
-    <img class="logo_image" src="images/logo.png">
+    <img class="logo_image" src="../logo.png">
 
     <ul>
       <li><a href="/travel">Home</a></li>

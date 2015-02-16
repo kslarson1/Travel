@@ -22,7 +22,13 @@ get_header(); ?>
 <div class="row">
 	<div class="col-xs-12 col-md-8">
 		<?php
-		$args = array( 'post_type' => 'travel_posts', 'posts_per_page' => 8 );
+		$args = array(
+			'post_type' => 'travel_posts',
+			'posts_per_page' => 2,
+			'orderby'=> 'date',
+			'paged'=>$paged
+			);
+
 $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post(); ?>
   	<h2 class="post_header"><?php the_title(); ?></h2>

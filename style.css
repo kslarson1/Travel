@@ -606,7 +606,7 @@ h6 {
   cursor: pointer;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 80px;
+  min-height: 80px;
   padding: 5px; }
   .black_background_top p {
     margin: 0;

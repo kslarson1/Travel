@@ -10,9 +10,7 @@
 
 <header class="entry-header">
 
-  <div class="entry-meta">
-    <?php travel_posted_on(); ?>
-  </div><!-- .entry-meta -->
+  
 </header><!-- .entry-header -->
 
 	<div class="entry-content">
